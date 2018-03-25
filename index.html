@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Tier2 Facilities, HPC@Sheffield: 26 Mar 2018</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/local.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+<!-- Start of presentation ------------------------------------------------------------------------ -->
+<section>
+	<h1>Tier2 HPC</h1>
+	<p>Andy Turner, EPCC<br/>
+	26 March 2017<br/>
+	<a href="mailto:a.turner@epcc.ed.ac.uk">a.turner@epcc.ed.ac.uk</a></p>
+	
+	<img class="plain" src="img/epcc_logo.png"/>
+	<p style="font-size: 0.7em"><a href="https://aturner-epcc.github.io/hpc-sheffield-2018">https://aturner-epcc.github.io/hpc-sheffield-2018</a></p>
+</section>
+
+<section>
+
+	<p style="font-size: 0.5em">Clone/fork this presentation at: <a href="https://github.com/aturner-epcc/hpc-sheffield-2018">https://github.com/aturner-epcc/hpc-sheffield-2018</a></p>
+	<img class="plain" src="img/cc_licence.png" alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" />
+	<p>Slide content is available under under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US">
+        Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</a></p>
+
+        <p style="font-size: 0.35em">This means you are free to copy and redistribute the material and adapt
+		and build on the material under the following terms: You must give appropriate credit, provide
+		a link to the license and indicate if changes were made. If you adapt or build on the material
+		you must distribute your work under the same license as the original.<br/>
+		Note that this presentation contains images owned by others. Please seek their permission
+		before reusing these images.</p>
+
+	<p>Built using <a href="https://github.com/hakimel/reveal.js">reveal.js</a></p>
+	<p style="font-size: 0.35em">reveal.js is available under the
+		<a href="https://github.com/hakimel/reveal.js/blob/master/LICENSE">MIT licence</a></p>
+
+</section>
+
+
+<section id="tier2">
+	<h2>Tier2: National Facilities</h2>
+	<img width="400" class="plain" src="imgtier2_logo.jpg" alt="Tier 2 national HPC logo" />
+	<img width="300" class="plain" src="img/epsrc-highres.jpg" alt="EPSRC logo" />
+</section>
+
+<section>
+	<p>Nationally accessible, located across the UK</p>
+	<div class="lblock">
+		<img class="plain" src="img/tier2_logos.png" alt="Logos of Tier 2 HPC hosting organisations" />
+	</div>
+	<div class="rblock">
+		<img src="img/tier2-map.png" alt="Map of Tier 2 HPC hosting organisations" />
+	</div>
+</section>
+
+<section>
+	<h3>Intel Xeon Clusters</h3>
+	<dl style="font-size: 0.75em">
+		<dt>Cirrus@EPCC</dt>
+			<dd>10,080 core Broadwell, FDR Infiniband Hypercube</dd>
+		<dt>HPC Midlands+</dt>
+			<dd>14,336 core Broadwell, 3:1 blocking EDR Infiniband (764 core non-blocking)</dd>
+			<dd>10 POWER8 per nodes with 1 TB memory</dd>
+		<dt>Cambridge CSD3</dt>
+			<dd>24,576 core Skylake, Intel Omnipath</dd>
+		<dt>Materials and Molecular Modelling Hub</dt>
+			<dd>17,280 core Broadwell, 3:1 blocking Intel Omnipath (864 core non-blocking)</dd>
+	</dl>
+</section>
+
+<section>
+	<h3>Other architectures</h3>
+	<dl style="font-size: 0.75em">
+		<dt>JADE</dt>
+			<dd>22 Nvidia DGX-1: 2&times; Xeon + 8&times; Nvidia P100 GPGPU</dd>
+		<dt>Cambridge CSD3</dt>
+			<dd>90 nodes: Xeon + 4&times; Nvidia P100 GPGPU, EDR Infiniband</dd>
+			<dd>384 Xeon Phi nodes (96 GiB memory per node), Intel Omnipath</dd>
+			<dd>50 node Hadoop Cluster</dd>
+		<dt>Isambard@GW4</dt>
+			<dd>10,000+ ARMv8 cores, Cray Aries Interconnect</dd>
+			<dd>Due mid-2018</dd>
+	</dl>
+</section>
+
+
+
+
+
+			</div>
+		</div>
+
+		<script src="../lib/js/head.min.js"></script>
+		<script src="../js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: '../plugin/markdown/marked.js' },
+					{ src: '../plugin/markdown/markdown.js' },
+					{ src: '../plugin/notes/notes.js', async: true },
+					{ src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
