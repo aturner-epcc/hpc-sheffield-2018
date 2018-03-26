@@ -137,11 +137,237 @@
 	<h2>Benchmarking</h2>
 </section>
 
+<section>
+	<h3>System comparison</h3>
+	<table style="font-size: 0.65em">
+		<tr>
+			<th>System</th>
+			<th>Processor</th>
+			<th>Cores per node</th>
+			<th>Total cores</th>
+			<th>Interconnect</th>
+		</tr>
+		<tr>
+			<td>ARCHER</td>
+			<td>Ivy Bridge</td>
+			<td>24 (2&times; 12)</td>
+			<td>118,080</td>
+			<td>Aries Dragonfly</td>
+		</tr>
+		<tr>
+			<td>Cirrus</td>
+			<td>Broadwell</td>
+			<td>36 (2&times; 18)</td>
+			<td>10,080</td>
+			<td>FDR Hypercube</td>
+		</tr>
+		<tr>
+			<td>Athena</td>
+			<td>Broadwell</td>
+			<td>28 (2&times; 14)</td>
+			<td>14,336</td>
+			<td>EDR Tree</td>
+		</tr>
+		<tr>
+			<td>Thomas</td>
+			<td>Broadwell</td>
+			<td>24 (2&times; 12)</td>
+			<td>17,280</td>
+			<td>OPA Tree</td>
+		</tr>
+		<tr>
+			<td>CSD3-Skylake</td>
+			<td>Skylake Gold</td>
+			<td>32 (2&times; 16)</td>
+			<td>24,576</td>
+			<td>OPA Tree</td>
+		</tr>
 
+	</table>
+</section>
 
+<section>
+	<h3>Node comparison</h3>
+	<table style="font-size: 0.5em">
+		<tr>
+			<th>System</th>
+			<th>Cores@GHz</th>
+			<th>FP / Gflops/s</th>
+			<th>&hellip;to ARCHER</th>
+			<th>Memory Channels</th>
+			<th>Memory BW / GB/s</th>
+			<th>&hellip;to ARCHER</th>
+		</tr>
+		<tr>
+			<td>ARCHER</td>
+			<td>24@2.7</td>
+			<td>518.4</td>
+			<td>1.0</td>
+			<td>8</td>
+			<td>119.4</td>
+			<td>1.0</td>
+		</tr>
+		<tr>
+			<td>Cirrus</td>
+			<td>36@2.1</td>
+			<td>1209.6</td>
+			<td>2.3</td>
+			<td>8</td>
+			<td>153.6</td>
+			<td>1.3</td>
+		</tr>
+		<tr>
+			<td>Athena</td>
+			<td>28@2.4</td>
+			<td>1075.2</td>
+			<td>2.1</td>
+			<td>8</td>
+			<td>153.6</td>
+			<td>1.3</td>
+		</tr>
+		<tr>
+			<td>Thomas</td>
+			<td>24@2.1</td>
+			<td>806.4</td>
+			<td>1.6</td>
+			<td>8</td>
+			<td>153.6</td>
+			<td>1.3</td>
+		</tr>
+		<tr>
+			<td>CSD3-Skylake</td>
+			<td>32@2.6</td>
+			<td>2662.4</td>
+			<td>5.1</td>
+			<td>12</td>
+			<td>238.4</td>
+			<td>2.0</td>
+		</tr>
 
+	</table>
+</section>
 
+<section>
+	<h3>StarSTREAM Triad</h3>
+	<table style="font-size: 0.5em">
+		<tr>
+			<th>System</th>
+			<th>Memory BW / GB/s</th>
+			<th>&hellip;to ARCHER</th>
+			<th>&hellip;to ARCHER (per node, maximum)</th>
+		</tr>
+		<tr>
+			<td>ARCHER</td>
+			<td>3.036</td>
+			<td>1.0</td>
+			<td>1.0</td>
+		</tr>
+		<tr>
+			<td>Cirrus</td>
+			<td>2.718</td>
+			<td>0.9</td>
+			<td>1.3</td>
+		</tr>
+		<tr>
+			<td>Athena</td>
+			<td>3.304</td>
+			<td>1.1</td>
+			<td>1.3</td>
+		</tr>
+		<tr>
+			<td>Thomas</td>
+			<td>3.694</td>
+			<td>1.2</td>
+			<td>1.3</td>
+		</tr>
+		<tr>
+			<td>CSD3-Skylake</td>
+			<td>4.508</td>
+			<td>1.5</td>
+			<td>2.0</td>
+		</tr>
 
+	</table>
+</section>
+
+<section>
+  	<h3>CASTEP - Medium</h3>
+	<img class="plain" alt="CASTEP medium benchmark performance plot" src="img/castep_al3x3perf.png" />
+</section>
+
+<section>
+	<h3>CASTEP - Medium (1 node)</h3>
+	<table style="font-size: 0.65em">
+		<tr>
+			<th>System</th>
+			<th>SCF cycle</th>
+			<th>&hellip;to ARCHER</th>
+		</tr>
+		<tr>
+			<td>ARCHER</td>
+			<td>184.2</td>
+			<td>1.0</td>
+		</tr>
+		<tr>
+			<td>Cirrus</td>
+			<td>102.4</td>
+			<td>1.8</td>
+		</tr>
+		<tr>
+			<td>Athena</td>
+			<td>100.6</td>
+			<td>1.8</td>
+		</tr>
+		<tr>
+			<td>Thomas</td>
+			<td>123.3</td>
+			<td>1.5</td>
+		</tr>
+		<tr>
+			<td>CSD3-Skylake</td>
+			<td>61.3</td>
+			<td>3.0</td>
+		</tr>
+
+	</table>
+</section>
+
+<section>
+  	<h3>GROMACS</h3>
+	<img class="plain" alt="GROMACS benchmark performance plot" src="img/gromacs_large_perf.png" />
+</section>
+
+<section>
+  	<h3>OpenSBLI (CFD)</h3>
+	<img class="plain" alt="OpenSBLI medium benchmark performance plot" src="img/osbli_tgv_perf.png" />
+</section>
+
+<section>
+  	<h3>HPCC RandomRing</h3>
+	<img class="plain" alt="HPCC RandomRing benchmark performance plot" src="img/beff_rr_bw.png" />
+</section>
+
+<section>
+  	<h3>CASTEP - Large</h3>
+	<img class="plain" alt="CASTEP large benchmark performance plot" src="img/CASTEP_DNA_perf.png" />
+</section>
+
+<section>
+  	<h2>Summary</h2>
+	<ul>
+		<li class="fragment">Wide range of HPC resources available</li>
+		<li class="fragment">Initial benchmarking of Xeon systems undertaken</li>
+		<li class="fragment">More recent processors generally give improved performance&hellip;</li>
+		<li class="fragment">&hellip;but amount of improvement is application-dependent</li>
+		<li class="fragment">Synthetic benchmark results do not always reflect real performance</li>
+	</ul>
+</section>
+
+<section>
+	<h3>Questions?</h3>
+	<p><a href="https://github.com/ARCHER-CSE/archer-benchmarks">https://github.com/ARCHER-CSE/archer-benchmarks</a></p>
+	<p><a href="http://www.archer.ac.uk/documentation/white-papers/benchmarks/UK_National_HPC_Benchmarks.pdf">UK National HPC Benchmarks (ARCHER White Paper)</a></p>
+</section>
 			</div>
 		</div>
 
